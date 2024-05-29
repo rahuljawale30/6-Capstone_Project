@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimation Submission Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Submit Estimation</span>
+            <p>
+                <a href="/view_estimations" class="btn btn-secondary">
+                    <span class="glyphicon glyphicon-log-out"></span> View All Task
+                </a>
+                 <a href="/" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-log-out"></span> log out
+                </a>
+            </p>
+      </nav>
+
+<div class="container">
+    <form action="{{ url_for('submit_estimation') }}" method="post">
+        <div class="mb-3">
+            <label for="task_name" class="form-label">Task Name:</label>
+            <input type="text" class="form-control" placeholder="Add you Task" id="task_name" name="task_name" aria-describedby="emailHelp" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="complexity" class="form-label">Complexity:</label>
+            <select id="complexity" class="form-control" name="complexity" aria-describedby="emailHelp" required>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="size" class="form-label">Size:</label>
+            <select id="size" class="form-control" name="size" required>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="task_type" class="form-label">Task Type:</label>
+            <input type="text" id="task_type" class="form-control" name="task_type" required>
+        </div>
+
+
+          <div class="form-group">
+    <label for="exampleFormControlTextarea1"> description</label>
+    <textarea class="form-control" placeholder="Add you description" id="additional_notes" rows="3" name="additional_notes"></textarea>
+  </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
