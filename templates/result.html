@@ -11,10 +11,14 @@
         <div class="container-fluid">
             <span class="navbar-brand mb-0 h1">Estimation tools</span>
             <p>
+                <a href="/view_historical_data" class="btn btn-secondary">
+                    <span class="glyphicon glyphicon-log-out"></span> View Historical Data
+                </a>
                  <a href="/" class="btn btn-danger">
                     <span class="glyphicon glyphicon-log-out"></span> log out
                 </a>
             </p>
+        </div>
       </nav>
     <div class="container">
         <h1>Estimation Calculation Result</h1>
@@ -22,13 +26,11 @@
         <p><strong>Confidence Level:</strong> {{ result['confidence_level'] }}</p>
         <p><strong>Estimated Range:</strong> {{ result['confidence_range'][0] }} - {{ result['confidence_range'][1] }} hours</p>
     </div>
-   <div class="container">
+        <div class="container">
             <p>
                 <a href="/view_estimations" class="btn btn-primary" role="button" aria-pressed="true">View All Task</a>
-                <a href="/task_details" class="btn btn-primary" role="button" aria-pressed="true">list Of Estimation Calculation</a>
+                <a href="/task_details" class="btn btn-primary" role="button" aria-pressed="true">list Of Calculated Estimation</a>
             </p>
-       <div>
-
-
-</body>
+        <div>
+  </body>
 </html>

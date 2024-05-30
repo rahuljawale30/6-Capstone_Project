@@ -13,6 +13,7 @@ db = client['effort']
 users_collection = db['users']
 estimation_collection = db['estimations']
 task_collection = db['task_details']
+historical_collection = db['historials']
 estimation_collection.create_index("created_at")
 
 @app.route('/')
@@ -118,6 +119,38 @@ def historical_data():
 
     # Pass the data to the template for rendering
     return render_template('historical_data_record.html', records=records)
+
+@app.route('/submission', methods=['GET','POST'])
+def submission():
+    if request.method == 'POST':
+        task_name = request.form['task_name']
+        complexity = request.form['complexity']
+        size = request.form['size']
+        task_type = request.form['task_type']
+        estimated_effort_hours = int(request.form['estimated_effort_hours'])
+        confidence_level = request.form['confidence_level']
+        estimated_range_hours = request.form['estimated_range_hours']
+
+        new_data = {
+            # "task_id": task_id,
+            "task_name": task_name,
+            "complexity": complexity,
+            "size": size,
+            "task_type": task_type,
+            "estimated_effort_hours": estimated_effort_hours,
+            "confidence_level": confidence_level,
+            "estimated_range_hours": estimated_range_hours
+        }
+
+        historical_collection.insert_one(new_data)
+        return redirect(url_for('view_historical_data'))
+
+    return render_template('create.html')
+
+@app.route('/view_historical_data')
+def view_historical_data():
+    users = list(historical_collection.find())
+    return render_template('view_data.html', users=users)
 
 
 
