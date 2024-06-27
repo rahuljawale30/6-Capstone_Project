@@ -56,5 +56,46 @@ The Effort Estimation Tool is a web application designed to provide users with a
 - Access the application in your web browser at http://localhost:5050.
 
 
+myproject/
+    manage.py
+    myproject/
+        __init__.py
+        settings.py
+        urls.py
+        wsgi.py
+        asgi.py
+    app1/
+        __init__.py
+        admin.py
+        apps.py
+        models.py
+        tests.py
+        views.py
+        migrations/
+            __init__.py
+    app2/
+        __init__.py
+        admin.py
+        apps.py
+        models.py
+        tests.py
+        views.py
+        migrations/
+            __init__.py
+    static/
+        css/
+        js/
+        images/
+    templates/
+        base.html
+        app1/
+            template1.html
+        app2/
+            template2.html
+    requirements.txt
+    README.md
+
+
+
 
 
