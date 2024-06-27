@@ -56,6 +56,6 @@ The Effort Estimation Tool is a web application designed to provide users with a
 - Access the application in your web browser at http://localhost:5050.
 
 <img src="https://github.com/rahuljawale30/Capstone_Project/blob/main/rand.png" alt="GitHub Logo" width="100" height="100">
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="1000" height="1000">
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="1000" height="1000" style="border-top: 2px solid black; display: block;">
 
 
