@@ -55,6 +55,34 @@ The Effort Estimation Tool is a web application designed to provide users with a
 - Run the Flask application using python app.py.
 - Access the application in your web browser at http://localhost:5050.
 
+### Screenshot
+- Home Page
+  ![1 png](https://github.com/user-attachments/assets/7dd25a97-ef78-4cb1-9fe5-1c5975b892cc)
+- login Page
+  ![2 png](https://github.com/user-attachments/assets/51f533b7-cc5b-4479-a3e1-5e12ed7cb4d4)
+- Register Page
+  ![3](https://github.com/user-attachments/assets/368ec436-c61e-494a-b072-a12bfcd4d2c0)
+- Submit Estimation
+  ![4](https://github.com/user-attachments/assets/2efffc4a-dd87-4c97-bd9d-1eb9563f5bc9)
+
+- Estimation tools
+  ![5](https://github.com/user-attachments/assets/9e8ba6bf-5732-47f2-9318-cd7bd947ba32)
+
+- Task Estimations
+  ![6](https://github.com/user-attachments/assets/9a6207b3-5bab-49cc-bdc3-ff39206f547b)
+
+- Estimations results
+  ![7](https://github.com/user-attachments/assets/dcc137a5-72fe-4879-8d79-ec78785f0a50)
+
+- Create Historical Data
+  ![12](https://github.com/user-attachments/assets/74f105d2-c63f-47ff-bd76-5d952b0ec0fc)
+
+- View Historical Data
+  ![13](https://github.com/user-attachments/assets/5d33e792-5d38-40d4-9452-477469a56b00)
+
+- 
+  
+
 
 
 
